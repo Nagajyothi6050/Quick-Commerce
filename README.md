@@ -65,7 +65,7 @@ quick-commerce-backend/
      ```
 4. **Run the server**
    ```bash
-   npm start
+   npm app.js
    ```
    The server will be running at `http://localhost:9000`.
 
