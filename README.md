@@ -36,6 +36,7 @@ quick-commerce-backend/
 │── app.js           # Main server file
 │── package.json     # Dependencies and scripts
 │── README.md        # Project documentation
+|__ node_modules     #packages used
 ```
 
 ## Installation & Setup
@@ -60,29 +61,30 @@ quick-commerce-backend/
      ```
      JWT_SECRET=your_jwt_secret_key
      MONGODB_URI=mongodb://localhost:27017/quick_commerce
-     PORT=5000
+     PORT=9000
      ```
 4. **Run the server**
    ```bash
    npm start
    ```
-   The server will be running at `http://localhost:5000`.
+   The server will be running at `http://localhost:9000`.
 
 ## API Endpoints
 
 ### Authentication Routes
 | Method | Endpoint | Description |
 |--------|---------|-------------|
-| POST | `/auth/register` | Register a new user |
-| POST | `/auth/login` | Login and get a JWT token |
+| POST | `/users/register` | Register a new user |
+| POST | `/users/login` | Login and get a JWT token |
 
 ### Product Routes
 | Method | Endpoint | Description |
 |--------|---------|-------------|
 | POST | `/products` | Create a new product (Admin only) |
 | GET | `/products` | Get all products with search & filters |
-| PUT | `/products/:id` | Update a product (Admin only) |
-| DELETE | `/products/:id` | Delete a product (Admin only) |
+| GET | `/products/{id} ` |Get the products by id|
+| PUT | `/products/{id}` | Update a product (Admin only) |
+| DELETE | `/products/{id}` | Delete a product (Admin only) |
 
 ### Cart Routes
 | Method | Endpoint | Description |
