@@ -54,7 +54,7 @@ quick-commerce-backend/
    ```
 2. **Install dependencies**
    ```bash
-   npm install
+   npm install 
    ```
 3. **Set up environment variables**
    - Create a `.env` file and add the following:
